@@ -1,0 +1,116 @@
+/* Ajuste general del body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('/static/soccer6.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 30px;
+    animation: moveBackground 10s infinite alternate ease-in-out; /* Movimiento del fondo */
+}
+
+/* Animación de entrada para el título */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de movimiento del fondo */
+@keyframes moveBackground {
+    0% {
+        background-position: center;
+    }
+    50% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center;
+    }
+}
+
+/* Estilos del título */
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+    margin-top: 150px;
+    margin-bottom: 50px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+}
+
+/* Colores personalizados del título */
+h1 .liga {
+    color: #C8E600;
+}
+
+h1 .mx {
+    color: #FF0000;
+}
+
+.descripcion {
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 700px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.titulo {
+    margin-bottom: 10px;
+}
+
+/* Ajustes del container */
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    width: 800px;
+    height: 200px;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde elegante */
+    animation: fadeIn 1.5s ease-in-out; /* Animación de entrada */
+}
+
+/* Estilo del subtítulo dentro del contenedor */
+.container h2 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+
+/* Estilos del botón */
+.btn {
+    background-color: #0088cc;
+    color: white;
+    padding: 18px 35px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 136, 204, 0.5);
+}
+
+/* Efecto de brillo al pasar el mouse */
+.btn:hover {
+    background-color: #005f99;
+    box-shadow: 0 0 20px rgba(0, 136, 204, 0.8);
+}
